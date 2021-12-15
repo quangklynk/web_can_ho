@@ -1,6 +1,80 @@
+footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  font: 15px;
+}
 
+.container-footer {
+  width: 1080px;
+  margin: 0 auto;
+}
 
+.part1-footer,
+.part2-footer {
+  padding: 25px 0px;
+  display: flex;
+}
 
+.left-part1,
+.left-part2 {
+  flex-basis: 40%;
+}
+.info-company {
+  line-height: 25px;
+}
+
+.info-company h3 {
+  line-height: 25px;
+  color: #23e243;
+}
+
+.info-company a {
+  color: #ffff;
+}
+
+.right-part1,
+.right-part2 {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-part1 p,
+.item-part2 p {
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.item-part1 ul li a,
+.item-part2 ul li a,
+.left-part2 ul li a {
+  color: #ffff;
+  line-height: 25px;
+}
+
+.line {
+  border-top: 2px solid #fff;
+}
+
+footer .container-footer .social {
+  display: flex;
+}
+
+.container-footer .social .left {
+  width: 120px;
+}
+
+.social .left a {
+  padding-right: 5px;
+}
+
+.social .left a i {
+  font-size: 25px;
+  color: #ffff;
+}
+
+.container-footer .social .right {
+  align-self: flex-end;
+}
 @media screen and (max-width: 767px) {
-
 }

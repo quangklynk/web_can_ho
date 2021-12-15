@@ -1,135 +1,522 @@
 <!DOCTYPE html>
 <html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <link rel="icon" href="" />
 
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site title</title>
 
-	<link rel="icon"
-		href="">
+    <!-- Common JS & CSS load -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/shared/css/reset.css" />
+    <link rel="stylesheet" href="/shared/css/common.css" />
+    <link rel="stylesheet" href="/shared/css/header.css" />
+    <link rel="stylesheet" href="/shared/css/footer.css" />
 
-	<title>Site title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
 
+    <!-- Top page CSS and JS load -->
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="/top/js/index.js"></script>
+  </head>
 
-	<!-- Common JS & CSS load -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="/shared/css/reset.css">
-	<link rel="stylesheet" href="/shared/css/common.css">
-	<link rel="stylesheet" href="/shared/css/header.css">
-	<link rel="stylesheet" href="/shared/css/footer.css">
+  <body>
+    <header>
+      <div class="container-header">
+        <div class="container-line1-header">
+          <div class="line1-header">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">bảng giá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">xem tuổi xây nhà</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">xem hướng nhà</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">thước lỗ ban</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">tư vấn cấp phép</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">phong thủy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">blog kiến thức</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-menu-header">
+          <div class="menu-header">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+              <!-- Brand/logo -->
+              <a class="navbar-brand" href="#">
+                <img src="./../shared/images/logo-header.png" alt="" />
+              </a>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
+              <!-- Links -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">dịch vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">biệt thự</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SHOWROOM & OFFICE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NHÀ PHỐ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NHÀ CẤP 4</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NỘI THẤT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NHÀ HÀNG & CÀ PHÊ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NHÀ HÀNG & CÀ PHÊ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LIÊN HỆ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<!-- Top page CSS and JS load -->
-	<link rel="stylesheet" href="css/index.css">
-	<script type='text/javascript' src='/top/js/index.js'></script>
+    <div id="content">
+      <div class="banner">
+        <img src="./images/2.-Nhà-anh-Thìn-Nghĩa-Đàn-1-1.png" alt="" />
+      </div>
 
+      <div class="main_content">
+        <div class="about-content">
+          <div class="title-about">
+            <img src="./images/Group 2 copy.png" alt="" />
+            <h2>CÙNG BẠN KIẾN TẠO KHÔNG GIAN</h2>
+          </div>
+          <div class="content-about">
+            <div class="left-content">
+              <p>
+                Công ty TNHH Kiến trúc CND được thành lập và hoạt động với mong
+                muốn cung cấp các dịch vụ tư vấn thiết kế và Thi công chuyên
+                nghiệp đáp ứng một cách đồng bộ các nhu cầu của nhà đầu tư về
+                các lĩnh vực Kiến trúc – Cảnh quan – Nội thất – Thi công xây
+                dựng.
+                <br />
+                <br />
+                Với đội ngũ Kiến trúc sư giàu kinh nghiệm, năng động, ham học
+                hỏi và nhiệt tình, đội ngũ Kỹ sư giám sát khắt khe, tỉ mỉ và
+                chính xác, đội ngũ thợ thi công chất lượng cao, có thâm niên lâu
+                năm trong nghề. Kiến trúc CND tự tin đem đến cho quý khách hàng
+                những sản phẩm tốt nhất, phù hợp với tình hình tài chính cũng
+                như xu thế phát triển của xã hội.
+              </p>
+            </div>
+            <div class="right-content">
+              <iframe
+                width="585"
+                height="329"
+                src="https://www.youtube.com/embed/Q_yuO8UNGmY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="bietthu-content">
+          <div class="title">
+            <h3>THIẾT KẾ BIỆT THỰ</h3>
+            <span></span>
+          </div>
+          <div class="grid-menu-6">
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6 special-item">
+              <p>
+                THIẾT KẾ NHÀ PHỐ 2 TẦNG MÁI BẰNG Chị Thu (Huyện Yên Thành, Nghệ
+                An)
+              </p>
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="nhapho-content">
+          <div class="title">
+            <h3>THIẾT KẾ NHÀ PHỐ</h3>
+            <span></span>
+          </div>
+          <div class="grid-menu-8">
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8 special-item">
+              <p>
+                THIẾT KẾ NHÀ PHỐ 2 TẦNG MÁI BẰNG Chị Thu
+                <br />
+                (Huyện Yên Thành, Nghệ An)
+              </p>
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+            <div class="item-grid-8">
+              <img src="./images/anh-Ngọc-3.png" alt="" />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="nhac4-content">
+          <div class="title">
+            <h3>THIẾT KẾ NHÀ PHỐ</h3>
+            <span></span>
+          </div>
+          <div class="grid-menu-8">
+            <div class="item-grid-8 item-col-row-2">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-8 special-item">
+              <p>
+                THIẾT KẾ NHÀ PHỐ 2 TẦNG MÁI BẰNG Chị Thu
+                <br />
+                (Huyện Yên Thành, Nghệ An)
+              </p>
+            </div>
+            <div class="item-grid-8">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-8">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-8">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="cafe-content">
+          <div class="title">
+            <h3>THIẾT KẾ QUÁN CÀ PHÊ - NHÀ HÀNG</h3>
+            <span></span>
+          </div>
 
-</head>
+          <div class="grid-menu-6">
+            <div class="item-grid-6 item-grid-col-2">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6 item-grid-row-2">
+              <img src="./images/anh-Ngọc-3 copy 8.png" alt="" />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="bietthu-content">
+          <div class="title">
+            <h3>THIẾT KẾ NỘI THẤT</h3>
+            <span></span>
+          </div>
+          <div class="grid-menu-6">
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6 special-item">
+              <p>
+                THIẾT KẾ NHÀ PHỐ 2 TẦNG MÁI BẰNG Chị Thu (Huyện Yên Thành, Nghệ
+                An)
+              </p>
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="cafe-content">
+          <div class="title">
+            <h3>THIẾT KẾ VĂN PHÒNG - SHOP - SHOWROOM</h3>
+            <span></span>
+          </div>
 
-<body>
+          <div class="grid-menu-6">
+            <div class="item-grid-6 item-grid-col-2">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6 item-grid-row-2">
+              <img src="./images/anh-Ngọc-3 copy 8.png" alt="" />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+            <div class="item-grid-6">
+              <img
+                src="./images/z2797407429629_2b389afbe9370a7834efe6d946889f0a.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="see-more">
+            <button>XEM THÊM</button>
+          </div>
+        </div>
+        <div class="quytrinh-content">
+          <div class="title">
+            <h3>QUY TRÌNH THIẾT KẾ VÀ THI CÔNG TRỌN GÓI</h3>
+            <span></span>
+          </div>
+          <div class="quitrinh">
+            <img src="./images/quy-trinh.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<header>
-		<div class="container-header">
-			<div class="container-line1-header">
-				<div class="line1-header">
-					<ul class="nav">
-						<li class="nav-item">
-						  <a class="nav-link" href="#">bảng giá</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">xem tuổi xây nhà</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">xem hướng nhà</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">thước lỗ ban</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">tư vấn cấp phép</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">phong thủy</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#">blog kiến thức</a>
-						</li>
-					</ul>	
-				</div>
-			</div>
-			<div class="container-menu-header">
-				<div class="menu-header">	
-					<nav class="navbar navbar-expand-sm navbar-dark">
-						<!-- Brand/logo -->
-						<a class="navbar-brand" href="#">
-							<img src="./../shared/images/logo-header.png" alt="">
-						</a>
-						
-						<!-- Links -->
-						<ul class="navbar-nav">
-						  <li class="nav-item">
-							<a class="nav-link" href="#">giới thiệu</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">dịch vụ</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">biệt thự</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">SHOWROOM & OFFICE</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">NHÀ PHỐ</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">NHÀ CẤP 4</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">NỘI THẤT</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">NHÀ HÀNG & CÀ PHÊ</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">NHÀ HÀNG & CÀ PHÊ</a>
-						  </li>
-						  <li class="nav-item">
-							<a class="nav-link" href="#">LIÊN HỆ</a>
-						  </li>
-						</ul>
-					  </nav>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div id="content">
-		<div class="banner">
-			BANNER
-		</div>
-
-		<div class="main_content">
-			CONTENT
-		</div>
-
-
-	</div>
-
-	<footer>
-		FOOTER
-	</footer>
-
-</body>
-
+    <footer>
+      <div class="container-footer">
+        <div class="part1-footer">
+          <div class="left-part1">
+            <div>
+              <img src="./../shared/images/logo-header.png" alt="" />
+            </div>
+            <address class="info-company">
+              <h3>CÔNG TY TNHH KIẾN TRÚC CND</h3>
+              CS1: 46 Nguyễn Cảnh Hoan, TP.Vinh <br />
+              CS2: 72 Trần Đăng Ninh, Q.Cầu Giấy, Hà Nội <br />
+              <a href="" class="phone">
+                <i class="fas fa-phone-volume"></i> 096 963 75 55
+              </a>
+              <br />
+              <a href="" class="mail"
+                ><i class="fas fa-envelope"></i> lienhe.cnd@gmail.com</a
+              >
+            </address>
+          </div>
+          <div class="right-part1">
+            <div class="item-part1">
+              <p>Công ty TNHH Kiến trúc CND</p>
+              <ul>
+                <li><a href="#"> Về chúng tôi </a></li>
+                <li><a href="#"> Tại sao bạn nên chọn CND? </a></li>
+                <li><a href="#"> Quy trình thiết kế và thi công </a></li>
+              </ul>
+            </div>
+            <div class="item-part1">
+              <p>Dịch vụ</p>
+              <ul>
+                <li><a href="#"> Tư vấn thiết kế kiến trúc </a></li>
+                <li><a href="#"> Tư vấn thiết kế nội thất </a></li>
+                <li><a href="#"> Quy hoạch và cảnh quan </a></li>
+                <li><a href="#"> Thi công công trình </a></li>
+                <li><a href="#"> Hồ sơ xin phép xây dựng </a></li>
+              </ul>
+            </div>
+            <div class="item-part1">
+              <p>Nhà phố</p>
+              <ul>
+                <li><a href="#"> Nhà phố 1 tầng </a></li>
+                <li><a href="#"> Nhà phố 2 tầng </a></li>
+                <li><a href="#"> Nhà phố 3 tầng </a></li>
+                <li><a href="#"> Nhà phố 4 tầng </a></li>
+                <li><a href="#"> Nhà phố trên 4 tầng </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="part2-footer">
+          <div class="left-part2">
+            <ul>
+              <li><a href="#"> Văn phòng & quán cafe </a></li>
+              <li><a href="#"> Thiết kế Tòa nhà - Văn phòng </a></li>
+              <li><a href="#"> Thiết kế Shop - Showroom </a></li>
+              <li><a href="#"> Thiết kế quán Cafe </a></li>
+            </ul>
+          </div>
+          <div class="right-part2">
+            <div class="item-part2">
+              <p>Thiết kế & thi công nội thất</p>
+              <ul>
+                <li><a href="#"> Nội thất Chung cư </a></li>
+                <li><a href="#"> Nội thất nhà ở </a></li>
+                <li><a href="#"> Nội thất văn phòng </a></li>
+                <li><a href="#"> Nội thất cửa hàng - showroom </a></li>
+              </ul>
+            </div>
+            <div class="item-part2">
+              <p>Biệt thự</p>
+              <ul>
+                <li><a href="#"> Thiết Kế Biệt Thự Vườn </a></li>
+                <li><a href="#"> Thiết Kế Biệt Thự Hiện Đại </a></li>
+                <li><a href="#"> Thiết Kế Biệt Thự Tân Cổ Điển </a></li>
+              </ul>
+            </div>
+            <div class="item-part2">
+              <p>Tra cứu</p>
+              <ul>
+                <li><a href="#"> Tra cứu thước lỗ ban </a></li>
+                <li><a href="#"> Xem hướng nhà </a></li>
+                <li><a href="#"> Xem tuổi xây dựng </a></li>
+                <li><a href="#"> Dự toán công trình </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="social">
+          <div class="left">
+            <a href="#"> <i class="fab fa-facebook-square"></i> </a
+            ><a href="#"> <i class="fas fa-envelope-square"></i> </a
+            ><a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </div>
+          <div class="right">
+            <p>Terms & Conditions | Cookie Policy | Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

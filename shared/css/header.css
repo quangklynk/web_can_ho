@@ -8,7 +8,7 @@
 
 .container-header .line1-header {
   height: 45px;
-  max-width: 1048px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -38,16 +38,24 @@
 }
 
 .menu-header{
-    max-width: 1048px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
-.nav-link{
-    color: #ffff;
+.menu-header .navbar{
+  padding: 5px 0px;
+}
+
+.menu-header .nav-link{
+    color: #ffff !important;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 17px;
     padding: 0;
+}
+
+.menu-header .nav-item:not(.menu-header .nav-item:last-child){
+  border-right: 1px solid #ffff;
 }
 
 /* Mobile */
