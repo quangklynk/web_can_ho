@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #2e2e2e;
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.full_img {
+  max-width: unset;
+  width: 100%;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a {
+  color: #231815;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #231815;
+  text-decoration: none;
+  opacity: 0.7;
+  color: initial;
+}
+
+a:focus {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a > p {
+  width: fit-content !important;
+}
+
+.common_width {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+input,
+select {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .common_width {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+}
