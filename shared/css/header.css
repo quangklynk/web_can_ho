@@ -1,5 +1,5 @@
 .container-header {
-  width: 1500px;
+  width: 100%;
 }
 
 .container-line1-header {
@@ -58,6 +58,8 @@
   border-right: 1px solid #ffff;
 }
 
-/* Mobile */
+/* Mobile 
+  ipad 900
+*/
 @media screen and (max-width: 767px) {
 }

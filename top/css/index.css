@@ -1,3 +1,11 @@
+#content .banner {
+  width: 100%;
+}
+
+#content .banner img {
+  width: 100%;
+}
+
 .main_content {
   background-color: #000;
   color: #ffff;
@@ -62,6 +70,7 @@
   padding: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .grid-menu-6 .special-item {
@@ -81,7 +90,7 @@
   text-align: center;
 }
 
-.see-more button {
+.see-more a {
   background-color: #007600;
   color: #ffff;
   border: none;
@@ -148,8 +157,18 @@
   object-fit: cover;
 }
 
-.quitrinh{
-    padding: 20px 0px;
+.grid-menu-6 .item-grid-6,
+.grid-menu-8 .item-grid-8{
+  transition: transform 0.2s; /* Animation */
+}
+
+.grid-menu-6 .item-grid-6:hover,
+.grid-menu-8 .item-grid-8:hover{
+  transform: scale(1.1);
+}
+
+.quitrinh {
+  padding: 20px 0px;
 }
 @media screen and (max-width: 768px) {
 }
