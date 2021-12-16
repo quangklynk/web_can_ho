@@ -9,10 +9,13 @@
 .container-sanpham {
   width: 1080px;
   margin: 0 auto;
+}
+
+.container-title {
   padding-top: 122px;
 }
 
-.container-sanpham .title-page {
+.title-page {
   background-color: #474747;
   display: flex;
   justify-content: center;
@@ -20,7 +23,7 @@
   opacity: 0.9;
 }
 
-.container-sanpham .title-page h2 {
+.title-page h2 {
   padding: 70px 0;
   font-size: 27px;
 }
@@ -75,44 +78,81 @@
   flex-basis: 60%;
 }
 
-.left-contact .row .col p{
-    font-size: 16px;
-    line-height: 19px;
+.left-contact .row .col p {
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.left-contact .row .submit-container{
-    text-align: center;
+.left-contact .row .submit-container {
+  text-align: center;
 }
 
-.left-contact .row .submit-container button{
-    font-size: 16px;
-    background-color: #00970b;
-    padding: 10px 25px;
-    color: #ffff;
-    text-align: center;
+.left-contact .row .submit-container button {
+  font-size: 16px;
+  background-color: #00970b;
+  padding: 10px 25px;
+  color: #ffff;
+  text-align: center;
 }
 
 .right-contact .box-phone {
   width: 100%;
   background-color: #00970b;
   height: 214px;
-  text-align: center;   
+  text-align: center;
   position: relative;
 }
 
-.right-contact .box-phone div{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.right-contact .box-phone div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.right-contact .box-phone i{
-    font-size: 95px;
-    padding-bottom: 15px;
+.right-contact .box-phone i {
+  font-size: 95px;
+  padding-bottom: 15px;
 }
 
-.right-contact .box-phone p{
-    font-size: 30px;
+.right-contact .box-phone p {
+  font-size: 30px;
+}
+
+/* Add link to img */
+
+.grid-menu-6 .item-grid-6 {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-menu-6 .item-grid-6 a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* hover */
+
+.grid-menu-6 .item-grid-6 a + img {
+  transition: all 0.2s; /* Animation */
+}
+
+.grid-menu-6 .item-grid-6 a:hover + img {
+  transform: scale(1.1);
+}
+
+/* overwrite breadcrumb */
+.breadcrumb{
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+  padding-top: 30px;
 }
