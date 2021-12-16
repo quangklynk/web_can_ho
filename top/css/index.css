@@ -159,12 +159,23 @@
 
 .grid-menu-6 .item-grid-6,
 .grid-menu-8 .item-grid-8{
-  transition: transform 0.2s; /* Animation */
+  overflow: hidden;
+
 }
 
-.grid-menu-6 .item-grid-6:hover,
-.grid-menu-8 .item-grid-8:hover{
+.grid-menu-6 .item-grid-6 img,
+.grid-menu-8 .item-grid-8 img{
+  transition: all  0.2s; /* Animation */
+  
+
+}
+
+
+
+.grid-menu-6 .item-grid-6 img:hover,
+.grid-menu-8 .item-grid-8 img:hover{
   transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .quitrinh {
