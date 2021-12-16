@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "Avo";
+  src: url("/shared/fonts/utm-avo.woff") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avo";
+  src: url("/shared/fonts/utm-avobold.woff") format("opentype");
+  font-weight: bold;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -11,7 +23,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Avo", Arial, Helvetica, sans-serif;
 }
 
 img {
