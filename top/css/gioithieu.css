@@ -1,0 +1,72 @@
+.main-page {
+  background-color: #000;
+  color: #ffff;
+  width: 100%;
+}
+
+.container-gioithieu {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* tiêu đề */
+.container-title {
+  width: 100%;
+  height: 190px;
+}
+
+.title-page {
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.shadow {
+  width: inherit;
+  height: inherit;
+  background-color: #474747;
+  opacity: 0.5;
+}
+
+.title-page h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 27px;
+}
+
+/* tiêu đề */
+
+.set-padding:not(.set-padding:last-child) {
+  padding-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+}
+
+.wrap-image {
+  text-align: center;
+  padding: 10px;
+  border: 5px solid #707070;
+}
+
+.quitrinh {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.quitrinh img {
+  width: 100%;
+}
